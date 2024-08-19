@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Invoice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div>
+    <p>Dear customer,</p>
+    <p>Please find below invoice details:</p>
+</div>
+
+<h3 th:utext="'Name: ' + ${name}"></h3>
+<h4 th:utext="'Country: ' + ${country}"></h4>
+<h4 th:utext="'Date: ' + ${date}"></h4>
+<h4 th:utext="'Amount to pay: ' + ${money}"></h4>
+
+</body>
+</html>
