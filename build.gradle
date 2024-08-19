@@ -6,7 +6,6 @@ plugins {
 //	id 'org.springdoc.openapi-gradle-plugin' version '1.7.0'
 }
 
-
 group = 'com.enefit'
 version = '0.0.1-SNAPSHOT'
 

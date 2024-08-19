@@ -1,4 +1,4 @@
-# Info fot candidate
+# Info for candidate
 This is our most important app for generating bills.
 
 Unfortunately person creating this service left and we need to release it to production today.
@@ -6,16 +6,16 @@ The guy was the best and checked everything manually but now jenkins fails on co
 Can you do something? We promised to deliver v2 today. Business is waiting for next update in 1 hour.
 
 # Controllers
-BillingController - Provides ability to return reports for customer for current month only, e.g. 
+## BillingController - Provides ability to return reports for customer for current month only, e.g. 
 * http://localhost:8080/v1/report?clientId=1
 * http://localhost:8080/v1/report?clientId=2
 * http://localhost:8080/v1/report?clientId=5
 
-BillingControllerV2 - Provides ability to return reports for customer and backdate our bills when required, date in the request is in format "yyyy-mm". 
+## BillingControllerV2 - Provides ability to return reports for customer and backdate our bills when required, date in the request is in format "yyyy-mm", e.g.: 
 * http://localhost:8080/v2/report/3/raw?clientId=3&date=2024-07
 * http://localhost:8080/v2/report/4/raw?clientId=4&date=2024-07
 
-In v2 we added possibility to view report as html but date was incorrectly implemented: we can see only reports for current month so far
+In v2 we added possibility to view report as html but date was incorrectly implemented: we can see only reports for current month so far, e.g.:
 * http://localhost:8080/v2/report/1/html
 * http://localhost:8080/v2/report/2/html 
 * http://localhost:8080/v2/report/5/html
